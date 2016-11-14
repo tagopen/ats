@@ -1,6 +1,52 @@
 +comment('general style')
 +ic
-.text-danger
-  color: #e74c3c
-  text-align: left
 +comment("home page style")
+html
+  overflow-x: hidden
+  height: 100%
+body
+  margin: 0
+  padding-right: 0 !important  
+  color: #000
+iframe
+  width: 100%
+a,
+a:hover,
+a:focus
+  color: inherit
+  text-decoration: none
+  outline: none  
++comment("wrapper style")
+.wrapper
+  background: url(../img/wrapbg.jpg) no-repeat
+  background-size: 100%
+  height: 700px
++comment("lmenu style")  
+.lmenu
+  background-color: rgba(255,255,255,0.9)
+  padding: 50px 40px 50px 20px
+  &__name
+    display: inline-block
+    font: 400 36px/40px $pts
+  &__line  
+    p
+    &:after
+      content: ''
+      display: inline-block
+      height: 1px
+      width: 50%
+      border-bottom: 1px solid #000
+  &__points
+    padding-top: 25px    
+  &__item
+    position: relative
+    list-style-type: none   
+    font: 400 24px/28px $pts
+    color: #050426
+    margin-bottom: 25px
+    a
+      display: block
+    .fa
+      position: absolute
+      right: -25px
+      top: 5px  
