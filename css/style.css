@@ -225,10 +225,12 @@ a:focus {
 }
 .lmenu__link {
   display: block;
+  padding: 0 15px;
 }
 .lmenu__dropdown {
   margin: 0 -30px 0 -20px;
   background-color: #eee;
+  padding: 0 15px;
 }
 .lmenu__dropdown li {
   padding-left: 20px;
