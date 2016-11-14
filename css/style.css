@@ -112,6 +112,36 @@
   vertical-align: middle;
 }
 
+.ic-logo:before {
+  width: 460px;
+  height: 460px;
+  background: url('../img/icons-sf0124f81d0.png') 0 -55px no-repeat;
+}
+
+.ic-rmenu1:before {
+  width: 61px;
+  height: 55px;
+  background: url('../img/icons-sf0124f81d0.png') -137px 0 no-repeat;
+}
+
+.ic-rmenu2:before {
+  width: 49px;
+  height: 46px;
+  background: url('../img/icons-sf0124f81d0.png') 0 0 no-repeat;
+}
+
+.ic-rmenu3:before {
+  width: 33px;
+  height: 46px;
+  background: url('../img/icons-sf0124f81d0.png') -49px 0 no-repeat;
+}
+
+.ic-rmenu4:before {
+  width: 55px;
+  height: 47px;
+  background: url('../img/icons-sf0124f81d0.png') -82px 0 no-repeat;
+}
+
 /* ---------------------------------------- */
 /* H O M E    P A G E    S T Y L E          */
 /* ---------------------------------------- */
@@ -143,7 +173,7 @@ a:focus {
 /* ---------------------------------------- */
 .wrapper {
   background: url(../img/wrapbg.jpg) no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 /* ---------------------------------------- */
@@ -152,6 +182,7 @@ a:focus {
 .lmenu {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 50px 0 50px 20px;
+  z-index: 10;
 }
 .lmenu__name {
   display: inline-block;
@@ -217,4 +248,52 @@ a:focus {
 }
 .lnews__item--link {
   text-decoration: underline;
+}
+
+/* ---------------------------------------- */
+/* R M E N U    S T Y L E                   */
+/* ---------------------------------------- */
+.rmenu {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  background-color: rgba(13, 32, 60, 0.9);
+}
+.rmenu__link {
+  display: block;
+  text-align: center;
+  padding: 0 30px;
+  margin-bottom: 25px;
+}
+.rmenu__link .ic {
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
+  box-shadow: 0 0 0 1px #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.rmenu__name {
+  font: 400 16px/20px "PT Sans", sans-serif;
+  color: #fff;
+}
+
+/* ---------------------------------------- */
+/* F O O T E R    S T Y L E                 */
+/* ---------------------------------------- */
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #050426;
+  padding: 30px;
+}
+.footer__box {
+  float: right;
+}
+.footer__text {
+  color: #fff;
+  font: 400 17px/20px "PT Sans", sans-serif;
 }
