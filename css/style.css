@@ -199,6 +199,7 @@ a:focus {
 .lmenu__name {
   display: inline-block;
   font: 400 36px/40px "PT Sans", sans-serif;
+  padding: 50px 0 0 30px;
 }
 .lmenu__line:after {
   content: "";
@@ -225,21 +226,22 @@ a:focus {
 }
 .lmenu__link {
   display: block;
-  padding: 0 15px;
+  padding: 0 15px 0 30px;
 }
 .lmenu__dropdown {
-  margin: 0 -30px 0 -20px;
   background-color: #eee;
-  padding: 0 15px;
 }
 .lmenu__dropdown li {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 .lmenu__dropdown li:hover {
   background-color: #c7c8d3;
 }
 
-.lcontact:after {
+.lcontact {
+  padding-left: 25px;
+}
+.lcontact:after, .lcontact:before {
   content: "";
   display: inline-block;
   height: 1px;
@@ -248,7 +250,7 @@ a:focus {
 }
 .lcontact__list {
   margin-bottom: 30px;
-  padding-right: 20px;
+  padding: 15px 20px 0 0;
 }
 .lcontact__item {
   font: 400 18px/24px "PT Sans", sans-serif;
@@ -256,6 +258,9 @@ a:focus {
   list-style-type: none;
 }
 
+.lnews {
+  padding-left: 25px;
+}
 .lnews__item {
   margin-bottom: 10px;
 }
@@ -301,6 +306,7 @@ a:focus {
   padding-top: 15px;
 }
 .login__item {
+  display: block;
   padding: 5px 10px;
   color: #fff;
   font: 400 16px/18px "PT Sans", sans-serif;
