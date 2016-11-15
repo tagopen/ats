@@ -369,7 +369,7 @@ a:focus {
 /* ---------------------------------------- */
 .content {
   margin: 0 35px;
-  padding: 50px 80px;
+  padding: 30px;
   background-color: #fff;
 }
 .content__heading {
@@ -452,6 +452,14 @@ a:focus {
   margin-bottom: 25px;
 }
 
+/* --------------------------------------------------- */
+/* A B O U T    P A G E    C O N T E N T    S T Y L E  */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+  .content {
+    padding: 50px 80px;
+  }
+}
 /* ------------------------------------------- */
 /* M A I N    P A G E    7 6 7 -    S T Y L E  */
 /* ------------------------------------------- */
