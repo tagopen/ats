@@ -280,6 +280,9 @@ a:focus {
 .lmenu__dropdown {
   background: rgba(5, 4, 38, 0.1);
 }
+.lmenu__link.active {
+  background-color: #9c9eb9;
+}
 
 .lcontact {
   padding: 0 15px 0 30px;
@@ -362,6 +365,27 @@ a:focus {
 }
 
 /* ---------------------------------------- */
+/* C O N T E N T    S T Y L E               */
+/* ---------------------------------------- */
+.content {
+  margin: 0 35px;
+  padding: 50px 80px;
+  background-color: #fff;
+}
+.content__heading {
+  color: #050426;
+  font: 400 30px/34px "PT Sans", sans-serif;
+  margin: 0 0 25px;
+}
+.content__heading:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+/* ---------------------------------------- */
 /* L O G I N    S T Y L E                   */
 /* ---------------------------------------- */
 .login {
@@ -409,6 +433,23 @@ a:focus {
 .footer__text {
   color: #fff;
   font: 400 17px/20px "PT Sans", sans-serif;
+}
+
+/* --------------------------------------------------- */
+/* A B O U T    P A G E    C O N T E N T    S T Y L E  */
+/* --------------------------------------------------- */
+.about__title {
+  font: 400 24px/28px "PT Sans", sans-serif;
+  color: #423c95;
+  margin-bottom: 30px;
+}
+.about__text {
+  font: 400 18px/20px "PT Sans", sans-serif;
+  color: #1a1a34;
+  margin-bottom: 25px;
+}
+.about__img {
+  margin-bottom: 25px;
 }
 
 /* ------------------------------------------- */
