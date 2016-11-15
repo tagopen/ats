@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 // Old browser notification
 $(function() { 
   $.reject({
@@ -26,7 +20,8 @@ $(function() {
 
 $(document).ready( function() {
   $('.navbar-toggle').on('click', function() {
-    $('body').toggleClass('in');
+    $('.wrapper').toggleClass('in');
+    $(this).toggleClass('tcon-transform');
   });
 });
 
