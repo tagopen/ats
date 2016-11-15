@@ -60,60 +60,61 @@
     <div class="container-fluid">
       <div class="row">
         <!--     LEFT MENU   BEGIN    -->
-        <div class="lmenu col-sm-2">
-          <div class="lmenu__name lmenu__line">ТСЖ Название</div>
+        <div class="col-sm-4 col-md-3 col-lg-2 lmenu">
+          <h1 class="lmenu__heading lmenu__heading--line">ТСЖ Название</h1>
           <div class="lmenu__points">
             <li class="lmenu__item">
-              <a data-toggle="collapse" data-target="#toggleDemo1" class="lmenu__link collapsed">
+              <a class="collapsed lmenu__link lmenu__link--bold" data-toggle="collapse" data-target="#toggleDemo1">
                 ТСЖ <i class="fa fa-angle-down" aria-hidden="true"></i>
               </a>
-              <div class="collapse" id="toggleDemo1" style="height: 0px;">
+              <div class="collapse" id="toggleDemo1">
                 <ul class="lmenu__dropdown nav">
-                  <li><a href="#">Submenu2.1</a></li>
-                  <li><a href="#">Submenu2.2</a></li>
-                  <li><a href="#">Submenu2.3</a></li>
+                  <li><a class="lmenu__link" href="#">О нас</a></li>
+                  <li><a class="lmenu__link" href="#">Правление</a></li>
+                  <li><a class="lmenu__link" href="#">Ревизионная комиссия</a></li>
+                  <li><a class="lmenu__link" href="#">Сотрудники</a></li>
+                  <li><a class="lmenu__link" href="#">Членство в организациях</a></li>
+                  <li><a class="lmenu__link" href="#">Лицензии и сертефикаты</a></li>
+                  <li><a class="lmenu__link" href="#">Новости</a></li>
+                  <li><a class="lmenu__link" href="#">Реквизиты</a></li>
+                  <li><a class="lmenu__link" href="#">Вакансии</a></li>
+                  <li><a class="lmenu__link" href="#">Контакты</a></li>
                 </ul>
               </div>
             </li>
+            <li class="lmenu__item"><a href="#" class="lmenu__link lmenu__link--bold">Дома</a></li>
             <li class="lmenu__item">
-              <a href="#" class="lmenu__link">
-                Дома 
-              </a>
-            </li>
-            <li class="lmenu__item">
-              <a data-toggle="collapse" data-target="#toggleDemo2" class="collapsed lmenu__link">
+              <a class="collapsed lmenu__link lmenu__link--bold" data-toggle="collapse" data-target="#toggleDemo2">
                 Услуги и тарифы<i class="fa fa-angle-down" aria-hidden="true"></i>
               </a>
-              <div class="collapse" id="toggleDemo2" style="height: 0px;">
+              <div class="collapse" id="toggleDemo2">
                 <ul class="lmenu__dropdown nav">
-                  <li><a href="#">Submenu2.1</a></li>
-                  <li><a href="#">Submenu2.2</a></li>
-                  <li><a href="#">Submenu2.3</a></li>
+                  <li><a class="lmenu__link" href="#">Услуги по содержаниюи ремонту</a></li>
+                  <li><a class="lmenu__link" href="#">Коммунальные услуги</a></li>
+                  <li><a class="lmenu__link" href="#">Взносы на капитальный ремонт</a></li>
+                  <li><a class="lmenu__link" href="#">Платные услуги</a></li>
                 </ul>
               </div>
             </li>
             <li class="lmenu__item">
-              <a data-toggle="collapse" data-target="#toggleDemo3" class="collapsed lmenu__link">
+              <a class="collapsed lmenu__link lmenu__link--bold" data-toggle="collapse" data-target="#toggleDemo3">
                 Документы и отчетность <i class="fa fa-angle-down" aria-hidden="true"></i>
               </a>
-              <div class="collapse" id="toggleDemo3" style="height: 0px;">
-                <ul class="lmenu__dropdown nav">
-                  <li><a href="#">Submenu2.1</a></li>
-                  <li><a href="#">Submenu2.2</a></li>
-                  <li><a href="#">Submenu2.3</a></li>
+              <div class="collapse" id="toggleDemo3">
+                <ul class="nav lmenu__dropdown">
+                  <li><a class="lmenu__link" href="#">Учредительные документы</a></li>
+                  <li><a class="lmenu__link" href="#">Договоры</a></li>
+                  <li><a class="lmenu__link" href="#">Финансовая ответственность</a></li>
+                  <li><a class="lmenu__link" href="#">Протоколы</a></li>
+                  <li><a class="lmenu__link" href="#">Заключения</a></li>
+                  <li><a class="lmenu__link" href="#">Выполнения обязательств</a></li>
+                  <li><a class="lmenu__link" href="#">Административная ответственность</a></li>
+                  <li><a class="lmenu__link" href="#">Использование общего имущества</a></li>
                 </ul>
               </div>
             </li>
-            <li class="lmenu__item">
-              <a href="#" class="lmenu__link">
-                Фотоальбомы
-              </a>
-            </li>
-            <li class="lmenu__item">
-              <a href="#" class="lmenu__link">
-                Контактные телефоны 
-              </a>
-            </li>
+            <li class="lmenu__item"><a href="#" class="lmenu__link lmenu__link--bold">Фотоальбомы</a></li>
+            <li class="lmenu__item"><a href="#" class="lmenu__link lmenu__link--bold">Контактные телефоны </a></li>
           </div>
 
           <div class="lmenu__contact lcontact">
@@ -134,41 +135,52 @@
           </div>
 
           <div class="lmenu__news lnews">
-           <li class="lmenu__item">
-                Новости
-            </li>
+           <li class="lmenu__item"><h2 class="lmenu__sub-heading">Новости</h2></li>
             <li class="lcontact__item lnews__item">Lorem ipsum dolor sit amet, consectetur adipisicing  elit, sed do</li>
             <li class="lcontact__item lnews__item lnews__item--link"><a href="">Посмотреть все новости</a></li>
           </div>
         </div>
         <!--     LOGIN  BEGIN    -->
-        <div class="col-sm-8">
+        <div class="col-sm-6 col-md-7 col-lg-9 clearfix content">
           <div class="login">
             <a href="#" class="login__item"><i class="ic ic-login1"></i>Войти в личный кабинет</a>
             <a href="#" class="login__item"><i class="ic ic-login2"></i>Председатель ТСЖ</a>
           </div>
         </div>
         <!--     RIGHT MENU   BEGIN    -->
-        <div class="rmenu">
-          <a href="#" class="rmenu__link">
-            <i class="ic ic-rmenu1"></i>
-            <div class="rmenu__name">Связаться с нами</div>
-          </a>
-          <a href="#" class="rmenu__link">
-            <i class="ic ic-rmenu2"></i>
-            <div class="rmenu__name">Оплатить квитанцию</div>
-          </a>
-          <a href="#" class="rmenu__link">
-            <i class="ic ic-rmenu3"></i>
-            <div class="rmenu__name">Показания счетчиков</div>
-          </a>
-          <a href="#" class="rmenu__link">
-            <i class="ic ic-rmenu4"></i>
-            <div class="rmenu__name">Отправить заявку</div>
-          </a>
-        </div>
+        <div class="col-xs-12 col-sm-2 col-lg-1 rmenu">
+          <div class="rmenu__box">
+            <div class="rmenu__item">
+              <a href="#" class="rmenu__link">
+                <i class="ic ic-rmenu1 rmenu__icon"></i>
+                <span class="rmenu__name hidden-xs">Связаться <br>с нами</span>
+              </a>
+            </div>
+
+            <div class="rmenu__item">
+              <a href="#" class="rmenu__link">
+                <i class="ic ic-rmenu2  rmenu__icon"></i>
+                <span class="rmenu__name hidden-xs">Оплатить <br>квитанцию</span>
+              </a>
+            </div>
+
+            <div class="rmenu__item">
+              <a href="#" class="rmenu__link">
+                <i class="ic ic-rmenu3  rmenu__icon"></i>
+                <span class="rmenu__name hidden-xs">Показания <br>счетчиков</span>
+              </a>
+            </div>
+
+            <div class="rmenu__item">
+              <a href="#" class="rmenu__link">
+                <i class="ic ic-rmenu4 rmenu__icon"></i>
+                <span class="rmenu__name hidden-xs">Отправить <br>заявку</span>
+              </a>
+            </div>
+          </div><!-- /.rmenu__box -->
+        </div><!-- /.rmenu -->
         <!--     FOOTER   BEGIN    -->
-        <footer class="footer">
+        <footer class="footer clearfix">
           <div class="footer__box">
             <div class="footer__text">Название компании</div>
             <div class="footer__text">Председатель Петров П.П. : 89040000000</div>

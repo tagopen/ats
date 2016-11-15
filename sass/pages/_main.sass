@@ -1,8 +1,21 @@
 +comment('general style')
 +ic
-@each $ic in logo, rmenu1, rmenu2, rmenu3, rmenu4, login1, login2
+@each $ic in rmenu1, rmenu2, rmenu3, rmenu4, login1, login2
   .ic-#{$ic}
     +sb(#{$ic})
++rx(767)
+  @each $ic in rmenu1-xs
+    .ic-rmenu1
+      +sb(#{$ic})
+  @each $ic in rmenu2-xs
+    .ic-rmenu2
+      +sb(#{$ic})
+  @each $ic in rmenu3-xs
+    .ic-rmenu3
+      +sb(#{$ic})
+  @each $ic in rmenu4-xs
+    .ic-rmenu4
+      +sb(#{$ic})
 +comment("home page style")
 html
   overflow-x: hidden
@@ -10,7 +23,10 @@ html
 body
   margin: 0
   padding-right: 0 !important  
+  background: #0b1c37 url(../img/wrapbg.jpg) no-repeat fixed
+  overflow: hidden
   color: #000
+  +cover
 iframe
   width: 100%
 a,
@@ -20,49 +36,52 @@ a:focus
   text-decoration: none
   outline: none  
 +comment("wrapper style")
-.wrapper
-  background: url(../img/wrapbg.jpg) no-repeat
-  background-size: 100% 100%
 +comment("lmenu style")  
 .lmenu
+  padding: 25px 0 100px
+  min-height: 100vh
   background-color: rgba(255,255,255,0.9)
-  padding: 0
   z-index: 10
-  &__name
+  &__heading
     display: inline-block
-    font: 400 36px/40px $pts
-    padding: 50px 0 0 30px
-  &__line  
-    &:after
-      content: ''
-      display: inline-block
-      height: 1px
-      width: 50%
-      border-bottom: 1px solid #000
-  &__points
-    padding-top: 25px    
+    padding: 0 15px 0 30px
+    font: 700 27px/31px "PT Sans", sans-serif
+    color: #455e87
+    &--line  
+      &:after
+        content: ''
+        display: inline-block
+        height: 1px
+        width: 50%
+        border-bottom: 1px solid #000
+  &__sub-heading
+    font-weight: 700
   &__item
     position: relative
     list-style-type: none   
-    font: 400 24px/28px $pts
+    font: 400 20px/24px $pts
     color: #050426
-    margin-bottom: 25px
+    .fa
+      float: right
+  &__link
+    position: relative
+    display: block 
+    padding: 10px 30px
     cursor: pointer
+    +transition(background .3s ease-out)
+    &:hover
+      background-color: #c7c8d3  
+    &--bold
+      font-weight: 700
     .fa
       position: absolute
-      right: 8px
-      top: 5px  
-  &__link
-    display: block 
-    padding: 0 15px 0 30px  
+      right: 15px
+      top: 50%
+      +transform ( translateY(-50%) )
   &__dropdown
-    background-color: #eee
-    li
-      padding-left: 30px
-      &:hover
-        background-color: #c7c8d3
+    background: rgba(5,4,38,.05)
 .lcontact
-  padding-left: 25px
+  padding: 0 15px 0 30px
   &:after,
   &:before
     content: ''
@@ -71,8 +90,7 @@ a:focus
     width: 80%
     border-bottom: 1px solid #000
   &__list
-    margin-bottom: 30px
-    padding: 15px 20px 0 0
+    padding: 10px 0
   &__item
     font: 400 18px/24px $pts
     color: #050426     
@@ -89,18 +107,29 @@ a:focus
   right: 0
   height: 100%
   background-color: rgba(13,32,60,0.9)  
+  &__box
+    position: relative
+    padding-bottom: 100px
+    top: 50%
+    +transform( translateY(-50%) )
+  &__item
+    text-align: center
   &__link
-    display: block
+    display: inline-block
+    margin: 15% 0
     text-align: center 
-    padding: 0 31px
-    margin-bottom: 25px
-    .ic
-      height: 70px
-      width: 70px
-      line-height: 70px
-      box-shadow: 0 0 0 1px #fff
-      +br(50%)
+    &:hover
+      .rmenu__icon
+        background: rgba(255, 255, 255, .27)
+  &__icon
+    height: 70px
+    width: 70px
+    line-height: 70px
+    box-shadow: 0 0 0 1px #fff
+    +br(50%)
+    +transition(all .3s ease-out)
   &__name
+    display: block
     font: 400 16px/20px $pts
     color: #fff
 +comment("login style")  
@@ -115,6 +144,10 @@ a:focus
     border: 1px solid #fff
     margin-bottom: 10px
     +br(5px)
+    +transition(all .3s ease-out)
+    &:hover
+      background-color: rgba(20, 41, 67, .7)
+      color: #fff
     .ic
       margin-right: 15px
 +comment("footer style")
@@ -128,4 +161,44 @@ a:focus
     float: right
   &__text
     color: #fff
-    font: 400 17px/20px $pts  
+    font: 400 17px/20px $pts
++comment('main page 768- style')
++rx(767)
+  .lmenu
+    padding: 25px 0
+    min-height: auto
+  .content
+    margin: 20px 0
+  .login
+    float: none
+    &__item
+      text-align: center
+  .rmenu
+    background-color: #050426
+    height: auto
+    bottom: 0
+    text-align: center
+    z-index: 100
+    &__box
+      padding: 6px 0
+      top: auto
+      +transform( translateY(0) )
+    &__item
+      display: inline-block
+      margin: 0 10px
+    &__icon
+      width: 45px
+      height: 45px
+      line-height: 45px
+  .footer
+    position: static
+    padding-bottom: 71px
+
++comment('main page 1540+ style')
++r(1540)
+  .lmenu
+    &__heading
+      font: 400 36px/40px $pts
+    &__item
+      font: 400 24px/28px $pts
+      margin-bottom: 25px
