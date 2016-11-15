@@ -113,64 +113,64 @@
 }
 
 .ic-rmenu1:before {
-  width: 41px;
-  height: 27px;
-  background: url('../img/icons-s4b2cc96675.png') 0 -50px no-repeat;
+  width: 25px;
+  height: 17px;
+  background: url('../img/icons-s3993e96f96.png') 0 -84px no-repeat;
 }
 
 .ic-rmenu2:before {
   width: 49px;
   height: 46px;
-  background: url('../img/icons-s4b2cc96675.png') 0 -107px no-repeat;
+  background: url('../img/icons-s3993e96f96.png') 0 -112px no-repeat;
 }
 
 .ic-rmenu3:before {
   width: 33px;
   height: 46px;
-  background: url('../img/icons-s4b2cc96675.png') 0 -153px no-repeat;
+  background: url('../img/icons-s3993e96f96.png') 0 -158px no-repeat;
 }
 
 .ic-rmenu4:before {
   width: 55px;
   height: 47px;
-  background: url('../img/icons-s4b2cc96675.png') 0 -199px no-repeat;
+  background: url('../img/icons-s3993e96f96.png') 0 -204px no-repeat;
 }
 
 .ic-login1:before {
   width: 25px;
   height: 30px;
-  background: url('../img/icons-s4b2cc96675.png') -30px -77px no-repeat;
+  background: url('../img/icons-s3993e96f96.png') 0 -54px no-repeat;
 }
 
 .ic-login2:before {
   width: 30px;
   height: 28px;
-  background: url('../img/icons-s4b2cc96675.png') 0 -77px no-repeat;
+  background: url('../img/icons-s3993e96f96.png') -25px -84px no-repeat;
 }
 
 @media only screen and (max-width: 767px) {
   .ic-rmenu1:before {
     width: 27px;
     height: 19px;
-    background: url('../img/icons-s4b2cc96675.png') 0 -28px no-repeat;
+    background: url('../img/icons-s3993e96f96.png') 0 -26px no-repeat;
   }
 
   .ic-rmenu2:before {
     width: 22px;
     height: 22px;
-    background: url('../img/icons-s4b2cc96675.png') -27px -28px no-repeat;
+    background: url('../img/icons-s3993e96f96.png') 0 0 no-repeat;
   }
 
   .ic-rmenu3:before {
     width: 19px;
     height: 28px;
-    background: url('../img/icons-s4b2cc96675.png') -26px 0 no-repeat;
+    background: url('../img/icons-s3993e96f96.png') -27px -26px no-repeat;
   }
 
   .ic-rmenu4:before {
     width: 26px;
     height: 26px;
-    background: url('../img/icons-s4b2cc96675.png') 0 0 no-repeat;
+    background: url('../img/icons-s3993e96f96.png') -22px 0 no-repeat;
   }
 }
 /* ---------------------------------------- */
