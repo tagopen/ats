@@ -452,10 +452,63 @@ a:focus {
   margin-bottom: 25px;
 }
 
-/* --------------------------------------------------- */
-/* A B O U T    P A G E    C O N T E N T    S T Y L E  */
-/* --------------------------------------------------- */
-@media only screen and (min-width: 768px) {
+/* ------------------------------------------------- */
+/* R U L E    P A G E    C O N T E N T    S T Y L E  */
+/* ------------------------------------------------- */
+.rule__box {
+  padding-bottom: 25px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #b9bbe2;
+  margin-bottom: 40px;
+}
+.rule__heading {
+  padding: 12px 45px;
+  background-color: #b9bbe2;
+  font: 400 24px/26px "PT Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.rule__person {
+  color: #42414f;
+  font: 400 22px/24px "PT Sans", sans-serif;
+  text-align: center;
+}
+.rule__row {
+  margin-bottom: 15px;
+}
+.rule__img {
+  margin: 0 auto 15px;
+}
+.rule__icon {
+  float: left;
+  width: 15%;
+  text-align: center;
+}
+.rule__icon .fa {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #b9bbe2;
+  height: 40px;
+  width: 40px;
+  line-height: 45px;
+  font-size: 20px;
+  color: #fff;
+}
+.rule__text {
+  padding-left: 15px;
+  float: left;
+  width: 85%;
+}
+
+/* -------------------------------------------------------------- */
+/* 9 9 2 +    A B O U T    P A G E    C O N T E N T    S T Y L E  */
+/* -------------------------------------------------------------- */
+@media only screen and (min-width: 992px) {
   .content {
     padding: 50px 80px;
   }

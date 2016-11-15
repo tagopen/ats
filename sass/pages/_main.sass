@@ -194,8 +194,45 @@ a:focus
     margin-bottom: 25px
   &__img
     margin-bottom: 25px 
-+comment("about page content style") 
-+r(768)  
++comment("rule page content style")  
+.rule
+  &__box
+    padding-bottom: 25px
+    +br(3px)
+    border: 1px solid #b9bbe2
+    margin-bottom: 40px
+  &__heading
+    padding: 12px 45px
+    background-color: #b9bbe2  
+    font: 400 24px/26px $pts
+    color: #fff  
+    margin-bottom: 15px
+  &__person
+    color: #42414f
+    font: 400 22px/24px $pts
+    text-align: center
+  &__row
+    margin-bottom: 15px   
+  &__img
+    margin: 0 auto 15px
+  &__icon
+    float: left
+    width: 15%
+    text-align: center
+    .fa
+      +br(50%)
+      background-color: #b9bbe2 
+      height: 40px
+      width: 40px
+      line-height: 45px
+      font-size: 20px
+      color: #fff
+  &__text
+    padding-left: 15px
+    float: left  
+    width: 85%  
++comment("992+ about page content style") 
++r(992)  
   .content
     padding: 50px 80px
 +comment('main page 767- style')
