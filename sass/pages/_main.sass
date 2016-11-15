@@ -116,7 +116,7 @@ a:focus
     text-align: center
   &__link
     display: inline-block
-    margin: 15% 0
+    margin: 10% 0
     text-align: center 
     &:hover
       .rmenu__icon
@@ -189,7 +189,7 @@ a:focus
     &__icon
       width: 45px
       height: 45px
-      line-height: 45px
+      line-height: 45px 
   .footer
     position: static
     padding-bottom: 71px
@@ -202,3 +202,12 @@ a:focus
     &__item
       font: 400 24px/28px $pts
       margin-bottom: 25px
+@media screen and (min-device-width: 767px) and (max-device-height: 600px)
+  .rmenu
+    &__link
+      margin: 3% 0
+    &__icon
+      height: 50px
+      width: 50px
+      line-height: 50px
+      +bs(none)
