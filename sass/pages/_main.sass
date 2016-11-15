@@ -1,4 +1,7 @@
 +comment('general style')
++font('MyriadProRegular', 'MyriadProRegular')
++font('MyriadProBold', 'MyriadProBold')
++font('MyriadProItalic', 'MyriadProItalic')
 +ic
 @each $ic in rmenu1, rmenu2, rmenu3, rmenu4, login1, login2
   .ic-#{$ic}
@@ -152,6 +155,13 @@ a:focus
       height: 1px
       width: 100%
       border-bottom: 1px solid #000 
+.g
+  &-naming
+    font: 400 24px/26px $mp  
+    color: #2f2e48
+  &-secondary  
+    font: 400 18px/20px $mp  
+    color: #2f2e48    
 +comment("login style")  
 .login
   float: right  
@@ -232,7 +242,7 @@ a:focus
     float: left  
     width: 85%  
 +comment("992+ about page content style") 
-+r(992)  
++r(1200)  
   .content
     padding: 50px 80px
 +comment('main page 767- style')

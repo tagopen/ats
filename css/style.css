@@ -101,6 +101,27 @@
 /* ---------------------------------------- */
 /* G E N E R A L    S T Y L E               */
 /* ---------------------------------------- */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../font/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProRegular/MyriadProRegular.woff2") format("woff2"), url("../font/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../font/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../font/MyriadProBold/MyriadProBold.eot");
+  src: url("../font/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProBold/MyriadProBold.woff2") format("woff2"), url("../font/MyriadProBold/MyriadProBold.woff") format("woff"), url("../font/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyriadProItalic";
+  src: url("../font/MyriadProItalic/MyriadProItalic.eot");
+  src: url("../font/MyriadProItalic/MyriadProItalic.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProItalic/MyriadProItalic.woff2") format("woff2"), url("../font/MyriadProItalic/MyriadProItalic.woff") format("woff"), url("../font/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .ic {
   display: inline-block;
   vertical-align: middle;
@@ -385,6 +406,15 @@ a:focus {
   border-bottom: 1px solid #000;
 }
 
+.g-naming {
+  font: 400 24px/26px "Myriad Pro", sans-serif;
+  color: #2f2e48;
+}
+.g-secondary {
+  font: 400 18px/20px "Myriad Pro", sans-serif;
+  color: #2f2e48;
+}
+
 /* ---------------------------------------- */
 /* L O G I N    S T Y L E                   */
 /* ---------------------------------------- */
@@ -508,7 +538,7 @@ a:focus {
 /* -------------------------------------------------------------- */
 /* 9 9 2 +    A B O U T    P A G E    C O N T E N T    S T Y L E  */
 /* -------------------------------------------------------------- */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .content {
     padding: 50px 80px;
   }
