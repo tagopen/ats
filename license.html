@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Правление</title>
+  <title>Лицензии</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <!-- Meta SEO - Description, Keywords, Title -->
@@ -44,6 +44,9 @@
   <!-- PTSans Font -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
 
+  <!-- Fancybox gallery -->
+  <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
   <!-- Custom CSS  -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -76,11 +79,11 @@
               <div class="collapse in" id="toggleDemo1">
                 <ul class="lmenu__dropdown nav">
                   <li><a class="lmenu__link" href="about.html">О нас</a></li>
-                  <li><a class="active lmenu__link" href="#">Правление</a></li>
-                  <li><a class="lmenu__link" href="members.html">Ревизионная комиссия</a></li>
+                  <li><a class="lmenu__link" href="rule.html">Правление</a></li>
+                  <li><a class="lmenu__link" href="#">Ревизионная комиссия</a></li>
                   <li><a class="lmenu__link" href="employee.html">Сотрудники</a></li>
                   <li><a class="lmenu__link" href="membership.html">Членство в организациях</a></li>
-                  <li><a class="lmenu__link" href="license.html">Лицензии и сертефикаты</a></li>
+                  <li><a class="active lmenu__link" href="#">Лицензии и сертефикаты</a></li>
                   <li><a class="lmenu__link" href="#">Новости</a></li>
                   <li><a class="lmenu__link" href="#">Реквизиты</a></li>
                   <li><a class="lmenu__link" href="#">Вакансии</a></li>
@@ -149,58 +152,25 @@
         <!--     CONTENT  BEGIN    -->
         <div class="col-sm-9 col-md-7 col-lg-9">
           <div class="clearfix content">
-            <h1 class="content__heading">Правление</h1>
-            <div class="clearfix rule__box">
-              <div class="rule__heading">Председатель правления</div>
-              <div class="col-sm-4 rule__person"><img src="img/ruleperson1.png" alt="" class="img-responsive rule__img">Иван Иванов Федорович</div>
-              <div class="col-sm-8 rule__info">
-                <div class="clearfix rule__row">
-                  <div class="rule__icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                  <div class="rule__text">
-                    <div class="g-naming rule__naming">Телефон</div>
-                    <div class="g-secondary rule__secondary">89000000000</div>
-                  </div>
-                </div>
-                <div class="clearfix rule__row">
-                  <div class="rule__icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                  <div class="rule__text">
-                    <div class="g-naming rule__naming">Электронная почта</div>
-                    <div class="g-secondary rule__secondary">predsedatel@mail.ru</div>
-                  </div>
-                </div>
-                <div class="clearfix rule__row">
-                  <div class="rule__icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-                  <div class="rule__text">
-                    <div class="g-naming rule__naming">Время и адрес приема:</div>
-                    <div class="g-secondary rule__secondary">Каждый понедельник и четверг с 10:00 до 14:00 в помещении правления ТСЖ (ул. Пулковская д.8 корп.1, помещение 1Н)</div>
-                  </div>
-                </div>
+            <h1 class="content__heading">Лицензии и сертификаты</h1>
+            <div class="clearfix row">
+              <div class="col-sm-4">
+                <a class="license__box" rel="group" href="img/license1.jpg">
+                  <img src="img/license1.jpg" alt="">
+                  <div class="license__hover">Сертификат соответсвия</div>
+                </a>
               </div>
-            </div>
-            <div class="clearfix rule__box">
-              <div class="rule__heading">Член правления</div>
-              <div class="col-sm-4 rule__person"><img src="img/ruleperson1.png" alt="" class="img-responsive rule__img">Иван Иванов Федорович</div>
-              <div class="col-sm-8 rule__info">
-                <div class="clearfix rule__row">
-                  <div class="rule__icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                  <div class="rule__text">
-                    <div class="rule__naming">Телефон</div>
-                    <div class="rule__secondary">89000000000</div>
-                  </div>
-                </div>
+              <div class="col-sm-4">
+                <a class="license__box" rel="group" href="img/license1.jpg">
+                  <img src="img/license1.jpg" alt="">
+                  <div class="license__hover">Сертификат соответсвия</div>
+                </a>
               </div>
-            </div>
-            <div class="clearfix rule__box">
-              <div class="rule__heading">Член правления</div>
-              <div class="col-sm-4 rule__person"><img src="img/ruleperson1.png" alt="" class="img-responsive rule__img">Иван Иванов Федорович</div>
-              <div class="col-sm-8 rule__info">
-                <div class="clearfix rule__row">
-                  <div class="rule__icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                  <div class="rule__text">
-                    <div class="rule__naming">Телефон</div>
-                    <div class="rule__secondary">89000000000</div>
-                  </div>
-                </div>
+              <div class="col-sm-4">
+                <a class="license__box" rel="group" href="img/license1.jpg">
+                  <img src="img/license1.jpg" alt="">
+                  <div class="license__hover">Сертификат соответсвия</div>
+                </a>
               </div>
             </div>
           </div>
@@ -260,7 +230,6 @@
   <script src="js/jquery.reject.js"></script>
 
   <!-- Navbar-fixed-top JavaScript -->
-  <script src="js/classie.js"></script>
   <script src="js/cbpAnimatedHeader.min.js"></script>
 
   <!-- Validation Form JavaScript -->
@@ -269,6 +238,10 @@
 
   <!-- Slick-Slider JavaScript -->
   <script src="js/slick.js"></script>
+
+  <!-- Fancybox gallery JavaScript -->
+  <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 
   <!-- Custom JavaScript -->
   <script src="js/main.js"></script>

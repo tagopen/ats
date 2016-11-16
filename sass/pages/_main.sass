@@ -195,8 +195,6 @@ a:focus
   padding: 30px
   background-color: #fff
   min-height: 100vh
-  &__col
-    background-color: rgba(146,146,174,0.68)
   &__heading
     color: #050426  
     font: 400 30px/34px $pts
@@ -332,6 +330,32 @@ a:focus
     &--span
       color: #2b2a65
       margin-right: 5px  
++comment("license page content style")   
+.license
+  &__box
+    display: inline-block
+    padding: 30px
+    float: left
+    line-height: 300px
+    color: #fff
+    text-align: center 
+    position: relative
+    &:hover
+      .license__hover
+        visibility: visible
+        opacity: 1
+        +transition(all .3s ease-out)
+  &__hover
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(5,4,38,0.54)  
+    visibility: hidden
+    opacity: 0 
+    +transition(all .3s ease-out)
+    color: #fff
 +comment("992+ about page content style") 
 +r(1200)  
   .content

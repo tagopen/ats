@@ -99,3 +99,7 @@ $('.dropdown, .dropup').each(function() {
   slidesToShow: 1,
   adaptiveHeight: true
 });*/
+
+$(document).ready(function() { 
+  $("a.license__box").fancybox(); 
+}); 
