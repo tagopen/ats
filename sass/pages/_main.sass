@@ -195,6 +195,8 @@ a:focus
   padding: 30px
   background-color: #fff
   min-height: 100vh
+  &__col
+    background-color: rgba(146,146,174,0.68)
   &__heading
     color: #050426  
     font: 400 30px/34px $pts
@@ -212,9 +214,6 @@ a:focus
   &-secondary  
     font: 400 18px/20px $pts
     color: #2f2e48  
-    span
-      font-weight: 700  
-      margin-right: 5px
   &-box
     float: left
     width: 90%
@@ -317,6 +316,22 @@ a:focus
     padding-left: 15px
     float: left  
     width: 85%  
++comment("member page content style")  
+.member
+  &__secondary
+    &--span    
+      font-weight: 700  
+      margin-right: 5px  
+      color: #3a3968  
++comment("membership page content style")      
+.membership
+  &__naming
+    margin-bottom: 30px
+  &__secondary
+    color: #050426
+    &--span
+      color: #2b2a65
+      margin-right: 5px  
 +comment("992+ about page content style") 
 +r(1200)  
   .content

@@ -456,6 +456,9 @@ a:focus {
   background-color: #fff;
   min-height: 100vh;
 }
+.content__col {
+  background-color: rgba(146, 146, 174, 0.68);
+}
 .content__heading {
   color: #050426;
   font: 400 30px/34px "PT Sans", sans-serif;
@@ -476,10 +479,6 @@ a:focus {
 .g-secondary {
   font: 400 18px/20px "PT Sans", sans-serif;
   color: #2f2e48;
-}
-.g-secondary span {
-  font-weight: 700;
-  margin-right: 5px;
 }
 .g-box {
   float: left;
@@ -630,6 +629,29 @@ a:focus {
   padding-left: 15px;
   float: left;
   width: 85%;
+}
+
+/* ----------------------------------------------------- */
+/* M E M B E R    P A G E    C O N T E N T    S T Y L E  */
+/* ----------------------------------------------------- */
+.member__secondary--span {
+  font-weight: 700;
+  margin-right: 5px;
+  color: #3a3968;
+}
+
+/* ------------------------------------------------------------- */
+/* M E M B E R S H I P    P A G E    C O N T E N T    S T Y L E  */
+/* ------------------------------------------------------------- */
+.membership__naming {
+  margin-bottom: 30px;
+}
+.membership__secondary {
+  color: #050426;
+}
+.membership__secondary--span {
+  color: #2b2a65;
+  margin-right: 5px;
 }
 
 /* -------------------------------------------------------------- */
