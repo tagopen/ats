@@ -207,10 +207,10 @@ a:focus
       border-bottom: 1px solid #000 
 .g
   &-naming
-    font: 400 24px/26px $mp  
+    font: 400 24px/26px $pts
     color: #2f2e48
   &-secondary  
-    font: 400 18px/20px $mp  
+    font: 400 18px/20px $pts
     color: #2f2e48    
 +comment("login style")  
 .login
@@ -291,6 +291,29 @@ a:focus
     padding-left: 15px
     float: left  
     width: 85%  
++comment("members page content style")
+.member
+  &__box
+    float: left
+  &__item
+    list-style-type: none
+    margin-bottom: 20px
+    &:before
+      content: '' 
+      height: 30px
+      width: 30px
+      display: inline-block
+      float: left
+      background-color: #b9bbe2
+      counter-increment: list
+      content: counter(list)
+      color: #fff 
+      line-height: 30px
+      +br(50%)
+      text-align: center
+      margin-right: 15px
+  &__list
+    counter-reset: list 0  
 +comment("992+ about page content style") 
 +r(1200)  
   .content
@@ -327,7 +350,6 @@ a:focus
   .footer
     position: static
     padding-bottom: 71px
-
 +comment('lmenu 768px-991px style')
 +screen(767, 991)
   .lmenu

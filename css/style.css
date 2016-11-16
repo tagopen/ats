@@ -470,11 +470,11 @@ a:focus {
 }
 
 .g-naming {
-  font: 400 24px/26px "Myriad Pro", sans-serif;
+  font: 400 24px/26px "PT Sans", sans-serif;
   color: #2f2e48;
 }
 .g-secondary {
-  font: 400 18px/20px "Myriad Pro", sans-serif;
+  font: 400 18px/20px "PT Sans", sans-serif;
   color: #2f2e48;
 }
 
@@ -596,6 +596,38 @@ a:focus {
   padding-left: 15px;
   float: left;
   width: 85%;
+}
+
+/* ------------------------------------------------------- */
+/* M E M B E R S    P A G E    C O N T E N T    S T Y L E  */
+/* ------------------------------------------------------- */
+.member__box {
+  float: left;
+}
+.member__item {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.member__item:before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  float: left;
+  background-color: #b9bbe2;
+  counter-increment: list;
+  content: counter(list);
+  color: #fff;
+  line-height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 15px;
+}
+.member__list {
+  counter-reset: list 0;
 }
 
 /* -------------------------------------------------------------- */
